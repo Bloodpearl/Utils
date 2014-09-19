@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace XmlWorker
 {
-    public static class XmlWorker
+    public static class XmlAgent
     {
         public static DataTree Read(string file)
         {
