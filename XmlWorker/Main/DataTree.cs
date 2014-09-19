@@ -53,7 +53,7 @@ namespace XmlWorker
         public bool Equal(DataNode node)
         {
             return this.Type == node.Type
-                && this.NodeValue == node.NodeValue;
+                && this.NodeValue.Equals(node.NodeValue);
         }
     }
 
