@@ -141,7 +141,7 @@ namespace XmlWorker
             get { return base.NodeValue; }
             set
             {
-                if (value.GetType() != DataType)
+                if (value != null && value.GetType() != DataType)
                     throw new InvalidCastException("Cannot store tyoe '" + value.GetType().Name + "' in '" + DataType.Name + "' leaf!");
                 base.NodeValue = value;
             }
@@ -160,9 +160,18 @@ namespace XmlWorker
 
         public bool Equal(DataLeaf node)
         {
+            /**/
             return this.Type == node.Type
                 && this.DataType == node.DataType
-                && this.Value == node.Value;
+                && this.Value.Equals(node.Value);
+            /**/
+            /*
+            bool result;
+            result = this.Type == node.Type;
+            result = result && this.DataType == node.DataType;
+            result = result && this.Value.Equals(node.Value);
+            return result;
+            /**/
         }
     }
 }

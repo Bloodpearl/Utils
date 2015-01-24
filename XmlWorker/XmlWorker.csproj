@@ -62,13 +62,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\UnitTestsBase\TestClass.cs">
+      <Link>TestClass.cs</Link>
+    </Compile>
+    <Compile Include="..\UnitTestsBase\TestRunner.cs">
+      <Link>TestRunner.cs</Link>
+    </Compile>
     <Compile Include="Main\DataTree.cs" />
+    <Compile Include="Main\XmlAgent.cs" />
     <Compile Include="Main\XmlClass.cs" />
-    <Compile Include="Main\XmlWorker.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Test.cs" />
-    <Compile Include="Tests\DataTree.cs" />
+    <Compile Include="Tests\DataTreeTest.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

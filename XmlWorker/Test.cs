@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace XmlWorker.Tests
-{
+{/*
     public abstract class Test
     {
         public static bool RunTests( string className, out string current, Program.TestFunction[] tests)
@@ -24,4 +24,5 @@ namespace XmlWorker.Tests
             return success;
         }
     }
+  * */
 }
